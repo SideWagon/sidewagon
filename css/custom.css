@@ -9,7 +9,7 @@
 .line {
     width: 112px;
     height: 47px;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid black;
     -webkit-transform:
         translateY(20px)
         translateX(5px)
