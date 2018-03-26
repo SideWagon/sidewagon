@@ -1,20 +1,14 @@
-var express = require('express')
-  , logger = require('morgan')
-  , app = express()
-  , template = require('jade').compileFile(__dirname + '/source/templates/homepage.jade')
+var fs = require('fs'),
+    path = require('path'),    
+    filePath = path.join(__dirname, 'index.html');
 
-app.use(logger('dev'))
-app.use(express.static(__dirname + '/static'))
-
-app.get('/', function (req, res, next) {
-  try {
-    var html = template({ title: 'Home' })
-    res.send(html)
-  } catch (e) {
-    next(e)
-  }
-})
-
-app.listen(process.env.PORT || 3000, function () {
-  console.log('Listening on http://localhost:' + (process.env.PORT || 3000))
-})
+fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
+    if (!err) {
+        console.log('received data: ' + data);
+        response.writeHead(200, {'Content-Type': 'text/html'});
+        response.write(data);
+        response.end();
+    } else {
+        console.log(err);
+    }
+});
