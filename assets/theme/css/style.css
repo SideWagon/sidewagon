@@ -3,7 +3,7 @@
  * Copyright 2017 Mobirise
  */
 section {
-  background-color: #eeeeee; }
+  background-color: transparent; }
 
 section,
 .container,
@@ -54,7 +54,19 @@ textarea[type="hidden"] {
   display: none; }
 
 body {
-  position: relative; }
+  position: relative;
+  height: 100%;
+	margin-top: 1%;
+  	background-image: url(herosunset.gif);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+	background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+-webkit-background-size: cover;
+
+}
 
 section {
   background-position: 50% 50%;
@@ -424,3 +436,6 @@ nav .mbr-section-btn {
 	top: 0;
 	left: -2400px;
 }
+
+
+
