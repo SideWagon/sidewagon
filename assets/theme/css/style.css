@@ -27,21 +27,6 @@ a {
 figure {
   margin-bottom: 0; }
 
-body {
-  position: relative;
-  height: 100%;
-	margin-top: 1%;
-  	background-image: url(herosunset.gif);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-    background-position: center;
-	background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
--webkit-background-size: cover;
-
-}
-
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6,
 .display-1, .display-2, .display-3, .display-4 {
@@ -65,7 +50,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 textarea[type="hidden"] {
   display: none; }
 
-body {
+body .hero {
   position: relative;
   height: 100%;
 	margin-top: 1%;
