@@ -28,7 +28,19 @@ figure {
   margin-bottom: 0; }
 
 body {
-  color: #232323; }
+  position: relative;
+  height: 100%;
+	margin-top: 1%;
+  	background-image: url(herosunset.gif);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+	background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+-webkit-background-size: cover;
+
+}
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6,
