@@ -50,7 +50,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 textarea[type="hidden"] {
   display: none; }
 
-body .hero {
+#hero {
   position: relative;
   height: 100%;
 	margin-top: 1%;
